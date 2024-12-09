@@ -1,0 +1,42 @@
+package app.encuentrastodo.data
+
+object TestingData {
+    val nombresDeProducto = listOf(
+        "Playera",
+        "Camisa",
+        "Pantalón",
+        "Shorts",
+        "Tenis",
+        "Zapatos",
+        "Reproductor de música",
+        "Computadora",
+        "Teléfono",
+        "Audífonos",
+        "Cable USB-C",
+        "Cable HDMI",
+        "Silla",
+        "Mesa",
+        "Tapete",
+        "Luces navideñas",
+        "CD",
+        "DVD",
+        "USB",
+        "Tarjeta de regalo",
+        "Abanico",
+        "Televisión",
+        "Cuadro",
+        "Adaptador de corriente",
+        "Regulador",
+        "Cajón",
+        "Cama",
+        "Colchón",
+        "Refrigerador",
+        "Estufa",
+        "Cilindro de gas",
+        "Inodoro",
+        "Almohada",
+        "Cobija",
+        "Sabana",
+        "Flores"
+    )
+}
