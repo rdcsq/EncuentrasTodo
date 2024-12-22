@@ -49,7 +49,7 @@ interface ReportesDao {
             LEFT JOIN ventaDetalle vd ON vd.tipoItemVenta = 0 AND vd.id = p.id
             LEFT JOIN paquetesProductos pp ON pp.productoId = p.id
             LEFT JOIN ventaDetalle vd2 ON vd2.tipoItemVenta = 1 AND vd2.id = pp.paqueteId
-        GROUP BY p.id, p.nombre, p.estatus, p.precioUnitario
+        GROUP BY p.id
     """
     )
     fun reporteVentaProducto(): Flow<List<ReporteProductoGanancia>>

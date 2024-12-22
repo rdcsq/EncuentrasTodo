@@ -20,7 +20,6 @@ interface ProductosDao {
                p.nombre,
                coalesce(vp.unidades, 0) AS unidadesEnCarrito,
                p.nUnidades - coalesce(sum(vp2.unidades * pp.nUnidades), 0) AS disponibles,
-               max(iif(vp.unidades is not null, 1, 0)) AS tieneVentas,
                max(iif(vd.id IS NOT NULL, 1, 0)) AS tieneVentas
         FROM productos p
             LEFT JOIN ventaProgreso vp ON p.id = vp.id AND vp.tipoItemVenta = 0
